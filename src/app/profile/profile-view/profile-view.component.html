@@ -1,0 +1,22 @@
+<dl *ngIf="data; else noData">
+    <dt>studentId</dt>
+    <dd>{{data.studentId}}</dd>
+
+    <dt>Fullname</dt>
+    <dd>{{data.firstname}} {{ data.lastname}}</dd>
+
+    <dt>Age</dt>
+    <dd>{{data.age}} years</dd>
+
+    <dt>autobiography</dt>
+    <dd class="app-cl-paragraph">{{data.autobiography}}</dd>
+
+    <dt>Friends</dt>
+    <dd>{{data.friends}}</dd>
+</dl>
+
+
+
+<ng-template #noData>
+    <div> No Data</div>
+</ng-template>

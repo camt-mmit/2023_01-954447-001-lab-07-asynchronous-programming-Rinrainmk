@@ -1,0 +1,8 @@
+
+<ng-container *ngIf="data$ | async as data">
+    <app-profile-form
+     [data]="data === 'undefined' ? undefined : data"
+     (dataChange)="save ($event)"
+     />
+</ng-container>
+
